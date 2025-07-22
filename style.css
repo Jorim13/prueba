@@ -1,0 +1,245 @@
+/* Fuente base */
+:root {
+  --color-primary: #0040ff;    /* EDITAR */
+  --color-secondary: #FF6B00;  /* EDITAR */
+  --color-bg: #f5f5f5;
+  --color-dark: #ffffff;
+  --max-width: 1200px;
+}
+
+*{box-sizing:border-box;}
+body {
+  margin: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--color-bg);
+  background: var(--color-bg);
+}
+
+/* Contenedor */
+.container {
+  width: 90%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Topbar */
+.topbar {
+  background: #000000;
+  border-bottom: 1px solid #000000;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 64px;
+}
+.logo {
+  height: 48px;
+  width: auto;
+}
+.main-nav a {
+  margin-left: 1rem;
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+.main-nav .nav-cta {
+  padding: 6px 12px;
+  background: var(--color-primary);
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+/* Hero */
+.hero {
+  min-height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  color:#ffffff;
+}
+.hero-overlay {
+  background: rgba(0, 0, 0); /* un poco transparente */
+  padding: 6rem 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* ocupa toda la pantalla */
+}
+
+.hero h1 {
+  margin:0 0 1rem;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+.hero-tagline {
+  margin:0 0 2rem;
+  font-size:1.2rem;
+}
+
+/* Secciones */
+.section {
+  padding: 6rem 1rem;
+  background: #000000;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.section p {
+  margin: 0 auto 2rem;
+  color: #ccc;
+}
+
+/* Cards misión/visión */
+.cards-2col {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1.5rem;
+  margin-top:2rem;
+}
+.card {
+  background:#000000;
+  border:1px solid #e0e0e0;
+  padding:2rem;
+  border-radius:8px;
+  text-align:center;
+}
+
+/* Grid servicios */
+.service-grid {
+  display:grid;
+  grid-template-columns:1fr;
+  gap:2rem;
+  margin-top:2.5rem;
+}
+.service-item img {
+  width:100%;
+  height:auto;
+  border-radius:8px;
+}
+.service-item h3 {
+  margin:1rem 0 0.5rem;
+}
+
+/* Contacto */
+.contacto-wrapper {
+  display:grid;
+  gap:2rem;
+  grid-template-columns:1fr;
+  align-items:start;
+  margin-top:2.5rem;
+}
+.contact-info ul {
+  list-style:none;
+  padding:0;
+  margin:1rem 0;
+}
+.contact-info li {
+  margin-bottom:0.5rem;
+}
+.contact-form {
+  background:#000000;
+  border:1px solid #e0e0e0;
+  padding:2rem;
+  border-radius:8px;
+  display:grid;
+  gap:1.25rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width:100%;
+  padding:0.75rem;
+  border:1px solid #ccc;
+  border-radius:4px;
+  font-size:1rem;
+}
+
+/* Botones */
+.btn-primary,
+.btn-secondary {
+  display:inline-block;
+  padding:0.9rem 1.75rem;
+  text-decoration:none;
+  font-weight:600;
+  border-radius:4px;
+  font-size:1rem;
+  cursor:pointer;
+  text-align:center;
+}
+.btn-primary {
+  background:var(--color-primary);
+  color:#fff;
+  border:none;
+}
+.btn-primary:hover {
+  opacity:.9;
+}
+.btn-secondary {
+  background:var(--color-secondary);
+  color:#fff;
+  border:none;
+}
+.btn-secondary:hover {
+  opacity:.9;
+}
+
+/* Footer */
+.footer {
+  background:#111;
+  color:#ccc;
+  padding:2rem 0;
+  font-size:0.9rem;
+  text-align:center;
+}
+.footer-inner {
+  display:grid;
+  gap:1rem;
+}
+.footer-nav a {
+  margin:0 0.5rem;
+  color:#ccc;
+  text-decoration:none;
+}
+.footer-nav a:hover {
+  color:#fff;
+}
+
+/* Botón flotante WhatsApp */
+.wsp-float {
+  position:fixed;
+  bottom:90px;
+  right:20px;
+  width:56px;
+  height:56px;
+  background:#25d366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 4px 16px rgba(0,0,0,.25);
+}
+.wsp-float img {
+  width:28px;
+  height:28px;
+}
+
+/* Responsive */
+@media (min-width:600px){
+  .cards-2col {grid-template-columns:1fr 1fr;}
+  .service-grid {grid-template-columns:repeat(3,1fr);}
+  .contacto-wrapper {grid-template-columns:1fr 1fr;}
+  .footer-inner {grid-template-columns:1fr auto; align-items:center; text-align:left;}
+}

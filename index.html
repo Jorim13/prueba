@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Sumetalicos - Techos y Cubiertas</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Descripción para Google -->
+  <meta name="description" content="<!-- EDITAR --> Breve frase: qué hace la empresa + ciudad + contacto WhatsApp.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="imagenes\logoP.png" />
+
+  <!-- Tipografía Google Fonts opcional -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Barra superior / logo -->
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a href="#inicio" class="logo-link">
+        <img src="imagenes\Imagen de WhatsApp 2025-07-19 a las 12.40.03_e6c050f2.jpg" class="logo">
+      </a>
+      <nav class="main-nav">
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#whatsapp" class="nav-cta">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="inicio" class="hero" style="background-image:url('assets/img/hero.jpg');">
+    <div class="hero-overlay">
+      <h1>Sumetalicos</h1>
+      <p class="hero-tagline"><!-- EDITAR --> Frase corta de valor: Calidad, confianza y atención rápida.</p>
+      <a class="btn-primary" href="https://wa.me/573147804856?text=Hola,%20estoy%20interesado%20en%20sus%20servicios" target="_blank" rel="noopener">Habla con un asesor</a>
+    </div>
+  </section>
+
+  <!-- Nosotros -->
+  <section id="nosotros" class="section">
+    <div class="container">
+      <h2>Quiénes Somos</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta porro possimus assumenda accusantium repellat aperiam quam nisi reprehenderit asperiores velit, accusamus eligendi optio, officiis blanditiis eius quidem deleniti modi nulla?</p>
+
+      <div class="cards-2col">
+        <article class="card">
+          <h3>Nuestra Misión</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa facere vero repellat eius at harum quia consequuntur velit qui id laudantium tempora cum repudiandae incidunt rerum, voluptatem impedit fugit ipsum?</p>
+        </article>
+        <article class="card">
+          <h3>Nuestra Visión</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit delectus pariatur porro vero fugiat provident asperiores minus, quisquam labore nostrum consequatur animi velit, voluptatibus rem. Maxime odio tempora et? Aperiam.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section id="servicios" class="section alt">
+    <div class="container">
+      <h2>Servicios</h2>
+      <p><!-- EDITAR --> Qué ofrecen a sus clientes (breve).</p>
+
+      <div class="service-grid">
+        <article class="service-item">
+          <img src="imagenes\9.jpg" alt="<!-- EDITAR --> Servicio 1">
+          <h3><!-- EDITAR --> Servicio 1</h3>
+          <p><!-- EDITAR --> Descripción corta del servicio.</p>
+        </article>
+        <article class="service-item">
+          <img src="imagenes\9.jpg" alt="<!-- EDITAR --> Servicio 2">
+          <h3><!-- EDITAR --> Servicio 2</h3>
+          <p><!-- EDITAR --> Descripción corta del servicio.</p>
+        </article>
+        <article class="service-item">
+          <img src="imagenes\9.jpg" alt="<!-- EDITAR --> Servicio 3">
+          <h3><!-- EDITAR --> Servicio 3</h3>
+          <p><!-- EDITAR --> Descripción corta del servicio.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="section alt">
+    <div class="container contacto-wrapper">
+      <div class="contact-info">
+        <h2>Contacto</h2>
+        <p><!-- EDITAR --> Déjanos un mensaje o escríbenos directo.</p>
+        <ul class="contact-list">
+          <li><strong>Tel:</strong> <!-- EDITAR --> +57 3147804856</li>
+          <li><strong>Email:</strong> <!-- EDITAR --> contacto@tuempresa.com</li>
+          <li><strong>Dirección:</strong> <!-- EDITAR --> Carrera 48 #72-15 Itagui, Antioquia</li>
+        </ul>
+        <a class="btn-primary" id="whatsapp" href="https://wa.me/573147804856?text=Hola,%20quiero%20cotizar" target="_blank" rel="noopener">WhatsApp directo</a>
+      </div>
+
+      <form class="contact-form" action="https://formspree.io/f/FORM_ID" method="POST">
+        <label>Nombre
+          <input type="text" name="nombre" required>
+        </label>
+        <label>Correo
+          <input type="email" name="email" required>
+        </label>
+        <label>Mensaje
+          <textarea name="mensaje" rows="4" required></textarea>
+        </label>
+        <button type="submit" class="btn-secondary">Enviar mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Sumetalicos. Todos los derechos reservados.</p>
+      <nav class="footer-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a hehref="https://wa.me/573147804856?text=Hola,%20me%20interesa%20su%20servicio" 
+     class="wsp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <img src="imagenes\bf8a76719f900b8757154eb3cfbc844a.jpg" alt="WhatsApp" />
+  </a>
+
+  <script>
+    // Año dinámico en el footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
+
